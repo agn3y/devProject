@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NPM Crash Course</title>
+    <script src="libs/axios.min.js" type="module"></script>
+    <!-- <script src="libs/swiper-element-bundle.min.js"></script> -->
+    <script src="script.js" type="module"></script>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+</head>
+<body class="bg-slate-800">
+    <!-- <h1>NPM Crash Course</h1>
+    <p>Think of NPM like a toy store. You want to play with toys, but you don’t have to make them by yourself. Other people have already made the toys, and you can just borrow them.</p>
+    <p>Imagine that each tpiece of code in the NPM store has different versions. A version is like a version of a game or toy, like how sometimes there are "Toy 1.0" or "Toy 2.0." The newer versions usually have improvements, bug fixes, or extra features.</p>
+    <p>When you use NPM to borrow a code, you can choose which version you want. If you want the newest version of a toy, you can tell NPM to get that. But sometimes, you might want an older version because it works better for your project.</p>
+    <p>NPM lets you control which version you want to use, so you can pick the right one for your project. You can even set it so that it always gets the newest version, or just stay with the one that works best for you!</p> -->
+
+    <h1 class="text-2xl text-neutral-200">Node Package Manager</h1>
+    <p class="text-neutral-200">NPM (Node Package Manager) is a package manager for JavaScript, primarily used in Node.js environments. It allows developers to easily install, manage, and share libraries (or packages) of code. These packages often consist of reusable modules or tools that help you build your application more efficiently without having to reinvent the wheel.</p>
+
+    <h2 class="text-2xl text-neutral-200">whenever we use <code><strong>npm install "name"</strong></code></h2>
+    <ul class="ml-7 list-disc">
+        <li class="text-neutral-200">it will look for the dependency and download it</li>
+        <li class="text-neutral-200">now examine the package.json file</li>
+        <li class="text-neutral-200">in package.json there is something called dependencies and when we look over it we will find name of those dependencies and in node_modules we will find all those dependencies</li>
+        <li class="text-neutral-200">when we look on those dependencies we will find another package.json which also has more dependencies</li>
+        <li class="text-neutral-200">that way we will see that all dependencies also want some other dependencies to operate</li>
+    </ul>
+    <p class="text-neutral-200">when we make use of node modules in package.json file use "type":"module"</p>
+    <p class="text-neutral-200">and remember to use import to import libraries</p>
+    <p>we have used parcel in this so when we use it it compile whole code which includes all the needed libraries needed tp compile and run the programme and then create its own server. However it would defer from live server server beacuse pracel has created its own server so it has all the libraries to run code well however it wont be same for the live server beacuse it dont understand anything untill unless it is described in the code mainly html file and if we want to make it work for live server we need to use import and export and also type:module</p>
+    <p>now we know we have use <code><strong>npm i "dependency"</strong></code> to install <code><strong>node_modules</strong></code> but the file is pretty use so we will make use of <code><strong>.gitignore</strong></code> file</p>
+    <p>when we use <code><strong>npm -i "dependency" -D</strong></code> It will download for developers</p>
+</body>
+</html>
+
